@@ -19,4 +19,7 @@ Route::get('/about', function () {
     return view('about');
 });
 
+Route::get('/post/all', 'PostsController@all');
+
 Route::get('/post/{id}', 'PostsController@index');
+
