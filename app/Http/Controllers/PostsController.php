@@ -22,4 +22,12 @@ class PostsController extends Controller
         $posts = Post::all();
         return view('show-all', compact('posts'));
     }
+
+    public function store()
+    {
+        $post = Post::create([
+            'title' => request()->title,
+            'body' => request()->body,
+        ]);
+    }
 }

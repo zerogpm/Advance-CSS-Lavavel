@@ -21,5 +21,7 @@ Route::get('/about', function () {
 
 Route::get('/post/all', 'PostsController@all');
 
+Route::post('/post/store-post', 'PostsController@store');
+
 Route::get('/post/{id}', 'PostsController@index');
 
