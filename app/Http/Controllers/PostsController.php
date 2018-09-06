@@ -23,8 +23,12 @@ class PostsController extends Controller
         return view('show-all', compact('posts'));
     }
 
-    public function store()
+    public function store(Request $request)
     {
+        $request->validate([
+            'title' => 'required',
+            'body' => 'required',
+        ]);
         $post = Post::create([
             'title' => request()->title,
             'body' => request()->body,

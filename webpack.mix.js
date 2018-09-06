@@ -12,4 +12,8 @@ let mix = require('laravel-mix');
  */
 
 mix.js('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css');
+   .sass('resources/assets/sass/foo.scss', 'public/css')
+   .sass('resources/assets/sass/ass.scss', 'public/css')
+   .sass('resources/assets/sass/share.scss', 'public/css')
+   .sass('resources/assets/sass/packages.scss', 'public/css')
+    .browserSync('http://laravel-test/');

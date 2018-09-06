@@ -13,6 +13,14 @@
 
 Route::get('/', function () {
     return view('welcome');
+})->name('home');
+
+Route::get('/packages', function () {
+    return view('packages');
+})->name('packages');
+
+Route::get('/ass-1', function () {
+    return view('assignment-1');
 });
 
 Route::get('/about', function () {

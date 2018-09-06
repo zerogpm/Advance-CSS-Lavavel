@@ -15,12 +15,14 @@ class CreatePostTest extends TestCase
      *
      * @return void
      */
-    public function testExample()
+    public function testCreatePost()
     {
         $resp = $this->post('/post/store-post', [
             'title' => 'store man',
             'body'  => 'hahah'
         ]);
+
+        $resp->assertStatus(200);
 
         $this->assertDatabaseHas('posts', [
             'title' => 'store man',
@@ -30,5 +32,18 @@ class CreatePostTest extends TestCase
         $post = Post::find(2);
         $this->assertEquals('store man', $post->title);
         $this->assertEquals('hahah', $post->body);
+    }
+
+    /**
+     * @group validation
+     */
+    public function testTitleIsRequiredToCreatePost()
+    {
+        $resp = $this->post('/post/store-post', [
+            'title' => null,
+            'body'  => 'we need body'
+        ]);
+
+        $resp->assertSessionHasErrors('title');
     }
 }
