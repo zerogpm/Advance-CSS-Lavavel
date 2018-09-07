@@ -19,6 +19,10 @@ Route::get('/packages', function () {
     return view('packages');
 })->name('packages');
 
+Route::get('/customers', function () {
+    return view('customers');
+})->name('customers');
+
 Route::get('/ass-1', function () {
     return view('assignment-1');
 });

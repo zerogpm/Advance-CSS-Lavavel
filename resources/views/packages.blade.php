@@ -26,7 +26,7 @@
                     <a href="{{ route('packages') }}">Packages</a>
                 </li>
                 <li class="main-nav__item">
-                    <a href="customers/index.html">Customers</a>
+                    <a href="{{ route('customers') }}">Customers</a>
                 </li>
                 <li class="main-nav__item main-nav__item--cta">
                     <a href="start-hosting/index.html">Start Hosting</a>
