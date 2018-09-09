@@ -13,6 +13,7 @@
     <link href="{{ mix('/css/packages.css') }}" rel="stylesheet" type="text/css">
 </head>
 <body>
+    <div class="backdrop"></div>
     <div class="background"></div>
     <header class="main-header">
         <div>
