@@ -24,6 +24,11 @@
         </div>
         <header class="main-header">
             <div>
+                <button class="toggle-button">
+                    <span class="toggle-button__bar"></span>
+                    <span class="toggle-button__bar"></span>
+                    <span class="toggle-button__bar"></span>
+                </button>
                 <a href="{{ route('home') }}" class="main-header__brand">
                     <img src="{{ asset('uhost.png') }}" alt="uHost - your favorite hosting company">
                 </a>
@@ -37,11 +42,24 @@
                         <a href="{{ route('customers') }}">Customers</a>
                     </li>
                     <li class="main-nav__item main-nav__item--cta">
-                        <a href="start-hosting/index.html">Start Hosting</a>
+                        <a href="{{ route('home') }}">Start Hosting</a>
                     </li>
                 </ul>
             </nav>
         </header>
+        <nav class="mobile-nav">
+            <ul class="mobile-nav__items">
+                <li class="mobile-nav__item">
+                    <a href="{{ route('packages') }}">Packages</a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a href="{{ route('customers') }}">Customers</a>
+                </li>
+                <li class="mobile-nav__item mobile-nav_item--cta">
+                    <a href="{{ route('home') }}">Start Hosting</a>
+                </li>
+            </ul>
+        </nav>
         <main>
             <section id="product-overview">
                 <h1>Get the freedom you deserve.</h1>
