@@ -8,6 +8,7 @@
     <title>Laravel</title>
 
     <!-- Fonts -->
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
     <link href="{{ mix('/css/share.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ mix('/css/packages.css') }}" rel="stylesheet" type="text/css">
@@ -17,6 +18,11 @@
     <div class="background"></div>
     <header class="main-header">
         <div>
+            <button class="toggle-button">
+                <span class="toggle-button__bar"></span>
+                <span class="toggle-button__bar"></span>
+                <span class="toggle-button__bar"></span>
+            </button>
             <a href="{{ route('home') }}" class="main-header__brand">
                 uHost
             </a>
@@ -35,6 +41,19 @@
             </ul>
         </nav>
     </header>
+    <nav class="mobile-nav">
+        <ul class="mobile-nav__items">
+            <li class="mobile-nav__item">
+                <a href="{{ route('packages') }}">Packages</a>
+            </li>
+            <li class="mobile-nav__item">
+                <a href="{{ route('customers') }}">Customers</a>
+            </li>
+            <li class="mobile-nav__item mobile-nav_item--cta">
+                <a href="{{ route('home') }}">Start Hosting</a>
+            </li>
+        </ul>
+    </nav>
     <main>
         <section class="package section-plan__plus">
             <a href="#">

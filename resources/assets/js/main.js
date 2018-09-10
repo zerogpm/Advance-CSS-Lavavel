@@ -4,7 +4,7 @@ let modal = document.querySelector('.modal');
 let closeButton = document.querySelector('.modal__action--negative');
 let toggleButton = document.querySelector('.toggle-button');
 let mobileNav = document.querySelector('.mobile-nav');
-console.dir(mobileNav);
+//console.dir(mobileNav);
 for (let i = 0; i < selectPlanButtons.length; i++) {
     selectPlanButtons[i].addEventListener('click', () => {
         // modal.style.display = 'block';
@@ -19,12 +19,16 @@ backdrop.addEventListener('click', () => {
     backdrop.classList.remove('open');
 });
 
-closeButton.addEventListener('click', closeModal);
+if (closeButton) {
+    closeButton.addEventListener('click', closeModal);
+}
 
 function closeModal() {
     // modal.style.display = 'none';
     // backdrop.style.display = 'none';
-    modal.classList.remove('open');
+    if (modal) {
+        modal.classList.remove('open');
+    }
     backdrop.classList.remove('open');
 }
 
