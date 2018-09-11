@@ -23,6 +23,10 @@ Route::get('/customers', function () {
     return view('customers');
 })->name('customers');
 
+Route::get('/hosting', function () {
+    return view('start-hosting');
+})->name('hosting');
+
 Route::get('/ass-1', function () {
     return view('assignment-1');
 });

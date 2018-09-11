@@ -16,44 +16,8 @@
 <body>
     <div class="backdrop"></div>
     <div class="background"></div>
-    <header class="main-header">
-        <div>
-            <button class="toggle-button">
-                <span class="toggle-button__bar"></span>
-                <span class="toggle-button__bar"></span>
-                <span class="toggle-button__bar"></span>
-            </button>
-            <a href="{{ route('home') }}" class="main-header__brand">
-                uHost
-            </a>
-        </div>
-        <nav class="main-nav">
-            <ul class="main-nav__items">
-                <li class="main-nav__item">
-                    <a href="{{ route('packages') }}">Packages</a>
-                </li>
-                <li class="main-nav__item">
-                    <a href="{{ route('customers') }}">Customers</a>
-                </li>
-                <li class="main-nav__item main-nav__item--cta">
-                    <a href="start-hosting/index.html">Start Hosting</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <nav class="mobile-nav">
-        <ul class="mobile-nav__items">
-            <li class="mobile-nav__item">
-                <a href="{{ route('packages') }}">Packages</a>
-            </li>
-            <li class="mobile-nav__item">
-                <a href="{{ route('customers') }}">Customers</a>
-            </li>
-            <li class="mobile-nav__item mobile-nav_item--cta">
-                <a href="{{ route('home') }}">Start Hosting</a>
-            </li>
-        </ul>
-    </nav>
+    @include('partials.nav')
+    @include('partials.mobile-nav')
     <main>
         <section class="package section-plan__plus">
             <a href="#">
@@ -80,17 +44,6 @@
             </a>
         </section>
     </main>
-<footer class="main-footer">
-    <nav>
-        <ul class="main-footer__links">
-            <li class="main-footer__link">
-                <a href="">Support</a>
-            </li>
-            <li class="main-footer__link">
-                <a href="">Terms of Use</a>
-            </li>
-        </ul>
-    </nav>
-</footer>
+    @include('partials.footer')
 </body>
 </html>
