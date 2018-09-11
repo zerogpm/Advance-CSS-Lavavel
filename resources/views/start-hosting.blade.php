@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="../favicon.png">
     <link href="https://fonts.googleapis.com/css?family=Anton|Montserrat:400,700" rel="stylesheet">
     <link href="{{ mix('/css/share.css') }}" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="start-hosting.css">
+    <link href="{{ mix('/css/hosting.css') }}" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -40,7 +40,7 @@
     </form>
 </main>
 @include('partials.footer')
-<script src="../shared.js"></script>
+{{--<script src="../shared.js"></script>--}}
 </body>
 
 </html>
