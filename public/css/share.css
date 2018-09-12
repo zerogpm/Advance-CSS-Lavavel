@@ -32,11 +32,15 @@ main {
   background: #2ddf5c;
   padding: 0.5rem 1rem;
   z-index: 1;
-}
-
-.main-header > div {
-  display: inline-block;
-  vertical-align: middle;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .toggle-button {
@@ -65,13 +69,11 @@ main {
   color: #0e4f1f;
   text-decoration: none;
   font-weight: bold;
-  height: 2.5rem;
-  display: inline-block;
-  vertical-align: middle;
 }
 
 .main-header__brand img {
-  height: 100%;
+  height: 2.5rem;
+  vertical-align: middle;
 }
 
 .main-nav {
@@ -82,10 +84,12 @@ main {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .main-nav__item {
-  display: inline-block;
   margin: 0 1rem;
 }
 
@@ -95,10 +99,9 @@ main {
   }
 
   .main-nav {
-    display: inline-block;
-    text-align: right;
-    width: calc(100% - 44px);
-    vertical-align: middle;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -143,16 +146,34 @@ main {
   list-style: none;
   margin: 0;
   padding: 0;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .main-footer__link {
-  margin: 1rem 0;
+  margin: 0.5rem 0;
 }
 
 @media (min-width: 40rem) {
+  .main-footer__links {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
   .main-footer__link {
-    display: inline-block;
     margin: 0 1rem;
   }
 }
@@ -182,9 +203,21 @@ main {
   width: 90%;
   height: 100%;
   list-style: none;
-  margin: 10% auto;
   padding: 0;
-  text-align: center;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .mobile-nav__item {
