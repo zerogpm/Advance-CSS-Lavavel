@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>uHost Customers</title>
     <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
-    <link href="https://fonts.googleapis.com/css?family=Anton|Montserrat:400,700" rel="stylesheet">
     <link href="{{ mix('/css/share.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ mix('/css/customer.css') }}" rel="stylesheet" type="text/css">
 </head>

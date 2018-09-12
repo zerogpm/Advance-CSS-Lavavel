@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>uHost Signup</title>
     <link rel="shortcut icon" href="../favicon.png">
-    <link href="https://fonts.googleapis.com/css?family=Anton|Montserrat:400,700" rel="stylesheet">
     <link href="{{ mix('/css/share.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ mix('/css/hosting.css') }}" rel="stylesheet" type="text/css">
 </head>

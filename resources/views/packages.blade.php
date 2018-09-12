@@ -9,7 +9,6 @@
 
     <!-- Fonts -->
     <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
     <link href="{{ mix('/css/share.css') }}" rel="stylesheet" type="text/css">
     <link href="{{ mix('/css/packages.css') }}" rel="stylesheet" type="text/css">
 </head>
