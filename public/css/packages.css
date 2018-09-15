@@ -18,6 +18,7 @@ main {
   margin: 1rem 0;
   width: 80%;
   position: relative;
+  overflow: hidden;
 }
 
 .package:hover,
@@ -36,13 +37,19 @@ main {
 
 .package__badge {
   position: absolute;
-  top: 0px;
+  top: 0rem;
   right: 0px;
-  margin: 1.25rem;
+  margin: 0;
   font-size: 0.75rem;
   color: white;
   background: #ff5454;
   padding: 0.5rem;
+  -webkit-transform: rotateZ(45deg) translateX(3.5rem) translateY(-1rem);
+          transform: rotateZ(45deg) translateX(3.5rem) translateY(-1rem);
+  -webkit-transform-origin: center;
+          transform-origin: center;
+  width: 12rem;
+  text-align: center;
 }
 
 .package__title {
