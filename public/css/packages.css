@@ -26,6 +26,8 @@ main {
   -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
           box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   border-color: #ff5454;
+  -webkit-animation: move-up 1s ease-out forwards;
+          animation: move-up 1s ease-out forwards;
 }
 
 .package a {
@@ -124,6 +126,40 @@ main {
   .section-plan__free:hover,
   .section-plan__free:active {
     border-right-color: #ff5454;
+  }
+}
+
+@-webkit-keyframes move-up {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+
+  33% {
+    -webkit-transform: translateY(-1.5rem);
+            transform: translateY(-1.5rem);
+  }
+
+  100% {
+    -webkit-transform: translateY(-1rem);
+            transform: translateY(-1rem);
+  }
+}
+
+@keyframes move-up {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+
+  33% {
+    -webkit-transform: translateY(-1.5rem);
+            transform: translateY(-1.5rem);
+  }
+
+  100% {
+    -webkit-transform: translateY(-1rem);
+            transform: translateY(-1rem);
   }
 }
 
