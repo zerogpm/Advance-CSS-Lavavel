@@ -129,6 +129,11 @@ main {
   border-bottom: 5px solid white;
 }
 
+.main-nav__item--cta {
+  -webkit-animation: wiggle 400ms 3s 8 ease-out none;
+          animation: wiggle 400ms 3s 8 ease-out none;
+}
+
 .main-nav__item--cta a,
 .mobile-nav_item--cta a {
   color: white;
@@ -277,5 +282,39 @@ main {
   opacity: 1 !important;
   -webkit-transform: translateY(0) !important;
           transform: translateY(0) !important;
+}
+
+@-webkit-keyframes wiggle {
+  0% {
+    -webkit-transform: rotateZ(0);
+            transform: rotateZ(0);
+  }
+
+  50% {
+    -webkit-transform: rotateZ(-10deg);
+            transform: rotateZ(-10deg);
+  }
+
+  100% {
+    -webkit-transform: rotateZ(10deg);
+            transform: rotateZ(10deg);
+  }
+}
+
+@keyframes wiggle {
+  0% {
+    -webkit-transform: rotateZ(0);
+            transform: rotateZ(0);
+  }
+
+  50% {
+    -webkit-transform: rotateZ(-10deg);
+            transform: rotateZ(-10deg);
+  }
+
+  100% {
+    -webkit-transform: rotateZ(10deg);
+            transform: rotateZ(10deg);
+  }
 }
 
