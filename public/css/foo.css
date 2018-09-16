@@ -178,7 +178,13 @@
 
 .modal {
   position: fixed;
-  display: none;
+  opacity: 0;
+  -webkit-transform: translateY(-3rem);
+          transform: translateY(-3rem);
+  -webkit-transition: opacity 200ms ease-out, -webkit-transform 500ms ease-out;
+  transition: opacity 200ms ease-out, -webkit-transform 500ms ease-out;
+  transition: opacity 200ms ease-out, transform 500ms ease-out;
+  transition: opacity 200ms ease-out, transform 500ms ease-out, -webkit-transform 500ms ease-out;
   z-index: 200;
   top: 20%;
   left: 30%;
