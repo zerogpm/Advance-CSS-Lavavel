@@ -1,7 +1,4 @@
-$colors: (main: #521751, secondary: #fa923f);
-$border-default: 0.05rem solid map-get($colors, main);
-$border-box: border-box;
-$size: (default: 1rem, tiny: 0.2rem);
+@import "variables";
 
 .char-highlight {
     font-weight: bold;
