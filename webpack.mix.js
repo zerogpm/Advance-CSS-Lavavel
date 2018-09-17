@@ -20,4 +20,5 @@ mix.js([
    .sass('resources/assets/sass/packages.scss', 'public/css')
    .sass('resources/assets/sass/customer.scss', 'public/css')
    .sass('resources/assets/sass/hosting.scss', 'public/css')
+   .sass('resources/assets/sass/sass.scss', 'public/css')
     .browserSync('http://laravel-test/');

@@ -27,6 +27,10 @@ Route::get('/hosting', function () {
     return view('start-hosting');
 })->name('hosting');
 
+Route::get('/sass', function () {
+    return view('sass');
+})->name('sass');
+
 Route::get('/ass-1', function () {
     return view('assignment-1');
 });

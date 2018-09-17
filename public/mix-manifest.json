@@ -5,5 +5,6 @@
     "/css/share.css": "/css/share.css",
     "/css/packages.css": "/css/packages.css",
     "/css/customer.css": "/css/customer.css",
-    "/css/hosting.css": "/css/hosting.css"
+    "/css/hosting.css": "/css/hosting.css",
+    "/css/sass.css": "/css/sass.css"
 }
