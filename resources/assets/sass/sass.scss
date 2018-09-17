@@ -1,9 +1,23 @@
 @import "variables";
 
+@mixin display-flex() {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+}
+
 .char-highlight {
     font-weight: bold;
     font-size: 1.4rem;
     color: map-get($colors, main);
+}
+
+.sass-display-vender {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
 }
 
 html {
@@ -16,10 +30,7 @@ body {
 }
 
 .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
+    @include display-flex();
     flex: {
         direction: column;
         wrap: nowrap;
@@ -29,14 +40,18 @@ body {
     box-sizing: $border-box;
 }
 
-.sass-introduction {
+.sass-section {
     border: $border-default;
     background: lighten(map-get($colors, main), 72%);
     padding: 2rem;
     text-align: center;
-    box-shadow: map-get($size, tiny) map-get($size, tiny) 0.1rem #ccc;
-    width: 90%;
     box-sizing: $border-box;
+    width: 90%;
+}
+
+.sass-introduction {
+    @extend .sass-section;
+    box-shadow: map-get($size, tiny) map-get($size, tiny) 0.1rem #ccc;
 }
 
 .sass-introduction p {
@@ -44,13 +59,8 @@ body {
 }
 
 .sass-details {
-    border: $border-default;
-    background: lighten(map-get($colors, main), 72%);
-    padding: map-get($size, default);
-    text-align: center;
+    @extend .sass-section;
     margin: 2rem 0;
-    width: 90%;
-    box-sizing: $border-box;
 }
 
 .section-header {
@@ -65,10 +75,7 @@ body {
     list-style: none;
     margin: map-get($size, default) 0 0 0;
     padding: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
+    @include display-flex();
     flex-direction: column;
 
     li {
